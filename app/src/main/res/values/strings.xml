@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">File Viewer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pdf_file">PDF FILE</string>
+    <string name="storage_permission">Storage Permission</string>
+    <string name="pdf_views">PDF Views</string>
+</resources>

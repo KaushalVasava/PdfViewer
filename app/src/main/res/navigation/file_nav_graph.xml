@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/file_nav_graph"
+    app:startDestination="@id/filesFragment">
+
+    <fragment
+        android:id="@+id/filesFragment"
+        android:name="com.lahsuak.fileviewer.fragments.FilesFragment"
+        android:label="Files"
+        tools:layout="@layout/fragment_files" >
+        <action
+            android:id="@+id/action_filesFragment_to_fileViewerFragment"
+            app:destination="@id/fileViewerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fileViewerFragment"
+        android:name="com.lahsuak.fileviewer.fragments.FileViewerFragment"
+        android:label="{pdfName}"
+        tools:layout="@layout/fragment_file_viewer" >
+        <argument
+            android:name="position"
+            app:argType="integer" />
+        <argument
+            android:name="pdfName"
+            app:argType="string" />
+        <argument
+            android:name="pdfPath"
+            app:argType="string" />
+    </fragment>
+</navigation>
